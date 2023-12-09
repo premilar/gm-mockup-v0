@@ -23,7 +23,7 @@ export function EmailGenerator() {
         <CardHeader className="mb-4">
           <h2 className="text-3xl font-bold text-blue-600 uppercase font-light">Example Email</h2>
           <p className="text-gray-500 dark:text-gray-400 font-light">
-            Here's an example of how your personalized email could look.
+            Here&aposs an example of how your personalized email could look.
           </p>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -37,17 +37,17 @@ export function EmailGenerator() {
               <Image
                 alt="2023 Chevrolet Corvette"
                 className="rounded w-full h-auto"
-                height="200"
+                height={200}
                 src={cadillacImage}
                 style={{
                   aspectRatio: "300/200",
                   objectFit: "cover",
                 }}
-                width="300"
+                width={300}
               />
               <h3 className="text-xl font-bold mt-2 text-blue-600 font-light">2023 Chevrolet Corvette</h3>
               <p className="text-gray-700 font-light">
-                The Chevrolet Corvette is a classic American sports car. It's a top performer with a sleek design and
+                The Chevrolet Corvette is a classic American sports car. It&aposs a top performer with a sleek design and
                 high-quality interior.
               </p>
             </div>
@@ -55,13 +55,13 @@ export function EmailGenerator() {
               <Image
                 alt="2023 Buick Enclave"
                 className="rounded w-full h-auto"
-                height="200"
+                height={200}
                 src={cadillacImage}
                 style={{
                   aspectRatio: "300/200",
                   objectFit: "cover",
                 }}
-                width="300"
+                width={300}
               />
               <h3 className="text-xl font-bold mt-2 text-blue-600 font-light">2023 Buick Enclave</h3>
               <p className="text-gray-700 font-light">
@@ -70,17 +70,17 @@ export function EmailGenerator() {
               </p>
             </div>
             <div>
-              <Image
-                alt="2023 GMC Sierra"
-                className="rounded w-full h-auto"
-                height="200"
-                src={cadillacImage}
-                style={{
-                  aspectRatio: "300/200",
-                  objectFit: "cover",
-                }}
-                width="300"
-              />
+            <Image
+              alt="2023 GMC Sierra"
+              className="rounded w-full h-auto"
+              height={200}
+              src={cadillacImage}
+              style={{
+                aspectRatio: "300/200",
+                objectFit: "cover",
+              }}
+              width={300}
+            />
               <h3 className="text-xl font-bold mt-2 text-blue-600 font-light">2023 GMC Sierra</h3>
               <p className="text-gray-700 font-light">
                 The GMC Sierra is a highly capable full-size pickup. It offers a variety of powerful engines and a
@@ -89,7 +89,7 @@ export function EmailGenerator() {
             </div>
           </div>
           <p className="text-gray-700 mt-4 font-light">
-            Each of these vehicles offers unique features and benefits. We'd be happy to provide more details or arrange
+            Each of these vehicles offers unique features and benefits. We&aposd be happy to provide more details or arrange
             a test drive at your convenience.
           </p>
           <p className="text-gray-700 font-light">Best,</p>
@@ -100,7 +100,7 @@ export function EmailGenerator() {
         <CardHeader className="mb-4">
           <h2 className="text-3xl font-bold text-blue-600 uppercase font-light">Customer Purchase History</h2>
           <p className="text-gray-500 dark:text-gray-400 font-light">
-            Here's a dashboard showing the purchase history for customers who have bought Cadillacs.
+            Here&aposs a dashboard showing the purchase history for customers who have bought Cadillacs.
           </p>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -173,7 +173,7 @@ export function EmailGenerator() {
 }
 
 
-function BarChart(props) {
+function BarChart(props: { [key: string]: any }) {
   return (
     <div {...props}>
       <ResponsiveBar
