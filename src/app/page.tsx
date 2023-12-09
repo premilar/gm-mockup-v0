@@ -2,6 +2,7 @@
 'use client'
 
 import { Dashboard } from "@/components/dashboard";
+import Image from 'next/image'
 
 // Use the Dashboard component within the JSX code
 function Page() {

@@ -41,7 +41,7 @@ export function Dashboard() {
             <div className="mb-4">
               <h2 className="text-lg font-semibold text-blue-600">John Doe</h2>
               <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                We hope you're enjoying your new Cadillac. We thought you might like to explore some other GM vehicles
+                We hope you&apos;re enjoying your new Cadillac. We thought you might like to explore some other GM vehicles
                 that could enhance your driving experience.
               </p>
             </div>
@@ -130,7 +130,7 @@ function PlaneIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 
-function BarChart(props: React.SVGProps<SVGSVGElement>) {
+function BarChart(props: React.HTMLProps<HTMLDivElement> & React.SVGProps<SVGSVGElement>) {
   return (
     <div {...props}>
       <ResponsiveBar
