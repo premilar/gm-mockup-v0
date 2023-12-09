@@ -6,6 +6,8 @@ import { CardHeader, CardContent, Card, CardTitle, CardDescription, CardFooter }
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ResponsiveBar } from "@nivo/bar"
+import cadillacImage from "../images/caddy.jpg";
+
 
 export function Dashboard() {
   return (
@@ -53,7 +55,7 @@ export function Dashboard() {
                       alt="Chevrolet Logo"
                       className="w-8 h-8 mr-2"
                       height="48"
-                      src="/placeholder.svg"
+                      src={cadillacImage.toString()}
                       style={{
                         aspectRatio: "48/48",
                         objectFit: "cover",
@@ -75,7 +77,7 @@ export function Dashboard() {
                       alt="GMC Logo"
                       className="w-8 h-8 mr-2"
                       height="48"
-                      src="/placeholder.svg"
+                      src="../images/caddy.jpg"
                       style={{
                         aspectRatio: "48/48",
                         objectFit: "cover",

@@ -2,6 +2,7 @@
 'use client'
 
 import { Dashboard } from "@/components/dashboard";
+import { EmailGenerator } from "@/components/email-generator";
 import Image from 'next/image'
 
 // Use the Dashboard component within the JSX code
@@ -9,7 +10,7 @@ function Page() {
   return (
     <div>
       {/* Other page content */}
-      <Dashboard />
+      <EmailGenerator />
     </div>
   );
 }
