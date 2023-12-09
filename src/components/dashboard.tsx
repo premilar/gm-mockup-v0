@@ -7,7 +7,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ResponsiveBar } from "@nivo/bar"
 
-export function dashboard() {
+export function Dashboard() {
   return (
     <div className="flex p-8">
       <div className="w-1/2 pr-4">
@@ -110,7 +110,7 @@ export function dashboard() {
 }
 
 
-function PlaneIcon(props) {
+function PlaneIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -130,7 +130,7 @@ function PlaneIcon(props) {
 }
 
 
-function BarChart(props) {
+function BarChart(props: React.SVGProps<SVGSVGElement>) {
   return (
     <div {...props}>
       <ResponsiveBar
